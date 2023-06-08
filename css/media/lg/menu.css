@@ -1,0 +1,409 @@
+div.menu{
+    width: 100%;
+    height: 40px;
+    background-color: #2b2b2b;
+    position: sticky;
+    top: 0;
+}
+
+div.menu>nav{
+    width:inherit;
+    height: inherit;
+}
+
+div.menu>nav>ul{
+    width: 65%;
+    height: inherit;
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    margin: 0 auto;
+}
+
+div.menu>nav>ul>li{
+    width: auto;
+    height: inherit;
+
+}
+
+div.menu>nav>ul>li>a{
+    display: block;
+    width: auto;
+    padding: 0 10px;
+    line-height: 40px;
+    text-decoration: none;
+    text-transform: capitalize;
+    color: whitesmoke;
+    font-size: 14px;
+    font-family: apple;
+    font-weight: bold;
+}
+
+#open,label[for=open],#close,label[for=close]{
+    display: none;
+}
+
+div.menu>nav>ul>li>div.submenu{
+    width: 100vw;
+    height: 0;
+    position: absolute;
+    left: 0;
+    display: block;
+    transition: 300ms;
+}
+
+div.menu>nav>ul>li:hover>div.submenu{
+    display: block;
+    height: calc(100vh - 40px);
+    backdrop-filter: blur(5px);
+}
+
+div.menu>nav>ul>li>div.submenu>div.child{
+    width: inherit;
+    height:0;
+    transition: 300ms;
+    background-color: #2b2b2b;
+}
+
+
+
+div.menu>nav>ul>li>div.submenu>div.child>div.parent{
+    width: 100%;
+    height: 0;
+}
+
+div.menu>nav>ul>li>div.submenu>div.child>div.parent>div.open>ul>li{
+    display: none;
+}
+
+div.menu>nav>ul>li>div.submenu>div.child>div.parent>div.open>ul>li>a{
+    display: none;
+}
+
+div.menu>nav>ul>li:hover>div.submenu>div.child{
+    height: 380px;
+}
+
+div.menu>nav>ul>li:hover>div.submenu>div.child>div.parent{
+    display: block;
+    width: 100%;
+    height: 380px;
+    transition: 400ms;
+}
+div.menu>nav>ul>li:hover>div.submenu>div.child>div.parent>div.open{
+    width: 20%;
+    display: inline-block;
+    margin-left: 100px;
+}
+
+div.menu>nav>ul>li:hover>div.submenu>div.child>div.parent>div.open>ul{
+    display: block;
+    width: inherit;
+    height: inherit;
+    list-style: none;
+    transition: 300ms;
+}
+
+div.menu>nav>ul>li:hover>div.submenu>div.child>div.parent>div.open>ul>li{
+    display: block;
+    width: auto;
+    height: inherit;
+    text-align: right;
+}
+
+div.menu>nav>ul>li:hover>div.submenu>div.child>div.parent>div.open>ul>li>a{
+    display: block;
+    margin-bottom: 20px;
+    padding: 10px;
+    text-decoration:none;
+    text-transform: capitalize;
+    list-style: none;
+    font-family: var(apple);
+    font-size: 15px;
+    color: whitesmoke;
+}
+
+
+div.header{
+    display: block;
+}
+
+div.header>div>h3{
+    margin: 15px auto;
+    display: flex;
+    justify-content: center;
+    font-size: 15px;
+    font-family: apple;
+    color: #2b2b2b;
+}
+
+div.progres{
+    width: 100%;
+    height: calc(100vh - 40px);
+    background-image: url(../../../images/hero_iphone14pro_spring__9xo85pm6sbmm_large.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    margin-bottom: 10px;
+}
+div.progres-2{
+    width: 100%;
+    height: calc(100vh - 40px);
+    background-image: url(../../../images/hero_iphone14_yellow__eun20sn4imi6_large.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    margin-bottom: 10px;
+}
+div.progres-3{
+    width: 100%;
+    height: calc(100vh - 40px);
+    background-image: url(../../../images/hero_apple_watch_series_8_spring__b1y8wb7xjc9y_large.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    margin-bottom: 10px;
+}
+
+
+div.progres>div.slogan{
+    width: 400px;
+    padding: 30px;
+    margin: 0 auto;
+}
+
+div.progres>div.slogan>h3{
+    font-size: 45px;
+    text-align: center;
+    font-family: apple;
+    color: whitesmoke;
+}
+div.progres>div.slogan>h4{
+    font-size: 25px;
+    text-align: center;
+    font-family: apple;
+    color: whitesmoke;
+}
+div.progres-2>div.slogan-2{
+    padding-top: 70px;
+}
+
+div.progres-2>div.slogan-2>h3{
+    font-size: 45px;
+    text-align: center;
+    font-family: apple;
+    color: #2b2b2b;
+}
+div.progres-2>div.slogan-2>h4{
+    font-size: 25px;
+    text-align: center;
+    font-family: apple;
+    color: #2b2b2b;
+}
+div.progres-3>div.slogan-3{
+    padding-top: 70px;
+}
+
+div.progres-3>div.slogan-3>h3{
+    font-size: 45px;
+    text-align: center;
+    font-family: apple;
+    color: whitesmoke;
+}
+
+
+div.content{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-flow: row wrap;
+    padding-bottom: 12px;
+}
+
+div.content>div.left{
+    width: 49%;
+    height: 75vh;
+    background-image: url(../../../images/content/iphone_tradein_promo__d5au3rkw5kuq_large.jpg);
+    background-position: center center;
+    background-size: cover;
+}
+div.content>div.right{
+    width: 49%;
+    height: 75vh;
+    background-image: url(../../../images/content/privacy__fzwalkil8paq_large.jpg);
+    background-position: center center;
+    background-size: cover;
+}
+
+div.content-2{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-flow: row wrap;
+    padding-bottom: 12px;
+}
+
+div.content-2>div.left{
+    width: 49%;
+    height: 75vh;
+    background-image: url(../../../images/content/promo_ipadpro__ch217v9v7no2_large.jpg);
+    background-position: center center;
+    background-size: cover;
+}
+div.content-2>div.right{
+    width: 49%;
+    height: 75vh;
+    background-image: url(../../../images/content/promo_pride23__cnpic94fthle_large.jpg);
+    background-position: center center;
+    background-size: cover;
+}
+div.content-3{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-flow: row wrap;
+    padding-bottom: 12px;
+}
+
+div.content-3>div.left{
+    width: 49%;
+    height: 75vh;
+    background-image: url(../../../images/content/tile__cauwwcyyn9hy_large.jpg);
+    background-position: center center;
+    background-size: cover;
+}
+div.content-3>div.right{
+    width: 49%;
+    height: 75vh;
+    background-image: url(../../../images/content/promo_wwdc23_swift__b3fev54l3bci_large.jpg);
+    background-position: center center;
+    background-size: cover;
+}
+
+div.content>div.left>h3{
+    font-size: 45px;
+    text-align: center;
+    font-family: apple;
+    color: #2b2b2b;
+    padding-top: 50px;
+}
+div.content>div.left>h4{
+    font-size: 20px;
+    text-align: center;
+    font-family: apple;
+    color: #2b2b2b;
+}
+
+
+div.content>div.right>h3{
+    font-size: 40px;
+    text-align: center;
+    font-family: apple;
+    color: white;
+    padding-top: 50px;
+}
+div.content>div.right>h4{
+    font-size: 40px;
+    text-align: center;
+    font-family: apple;
+    color: white;
+    padding-bottom: 5px;
+}
+div.content>div.right>h5{
+    font-size: 20px;
+    text-align: center;
+    font-family: apple;
+    color: white;
+}
+
+div.content-2>div.left>h3{
+    font-size: 45px;
+    text-align: center;
+    font-family: apple;
+    color: white;
+    padding-top: 50px;
+}
+div.content-2>div.left>h4{
+    font-size: 20px;
+    text-align: center;
+    font-family: apple;
+    color: white;
+}
+
+div.content-2>div.right>h3{
+    font-size: 40px;
+    text-align: center;
+    font-family: apple;
+    color: #2b2b2b;
+    padding-top: 50px;
+}
+div.content-2>div.right>h4{
+    font-size: 40px;
+    text-align: center;
+    font-family: apple;
+    color: #2b2b2b;
+    padding-bottom: 5px;
+}
+
+div.content-3>div.left>h3{
+    font-size: 40px;
+    text-align: center;
+    font-family: apple;
+    color: #2b2b2b;
+    padding-top: 50px;
+}
+div.content-3>div.left>h4{
+    font-size: 20px;
+    text-align: center;
+    font-family: apple;
+    color: #2b2b2b;
+    padding-bottom: 5px;
+}
+
+div.content-3>div.right{
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    flex-flow: row wrap;
+    
+}
+
+div.content-3>div.right>h3{
+    font-size: 40px;
+    text-align: center;
+    font-family: apple;
+    color: white;
+    padding-top: 50px;
+    justify-content: center;
+    align-items: flex-end;
+    padding-top: 300px;
+}
+
+
+
+div.footer{
+    width: 100%;
+    height: 800px;
+    background-color:#F5F5F7;
+}
+
+div.footer>div.dc{
+    width:100%;
+    padding: 20px;
+}
+
+div.footer>div.dc>p{
+    width: 70%;
+    font-family: var(apple);
+    margin: 0 auto;
+    margin-bottom: 10px;
+    font-size: 15px;
+}
+
+div.border{
+    width: 950px;
+    height: 1px;
+    background-color: #a0a0a0;
+    margin: 0 auto;
+
+}

@@ -1,0 +1,17 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+div.wrapper{
+    width: 100%;
+}
+
+@font-face {
+    font-family:apple;
+    src: url(../fonts/SFProText-Regular.eot);
+    src: url(../fonts/SFProText-Regular.ttf);
+    src: url(../fonts/SFProText-Regular.woff);
+    src: url(../fonts/sf-pro-text_regular.woff2);
+}

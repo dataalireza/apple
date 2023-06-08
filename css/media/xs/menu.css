@@ -1,0 +1,489 @@
+div.menu {
+  width: 100%;
+  height: auto;
+  background-color: #2b2b2b;
+}
+
+div.menu > nav {
+  width: inherit;
+}
+
+div.menu > nav > ul {
+  width: inherit;
+  list-style: none;
+  text-align: center;
+}
+
+div.menu > nav > ul > li {
+  display: inline-block;
+  width: 100%;
+  height: 5px;
+}
+
+div.menu > nav > ul > li > a {
+  display: block;
+  width: 100%;
+  height: inherit;
+  line-height: 40px;
+  color: whitesmoke;
+  text-decoration: none;
+  text-transform: capitalize;
+  font-family: apple;
+  font-size: 12px;
+}
+
+div.menu > nav > ul > li > a:hover {
+  background-color: gray;
+}
+
+#open,
+#close {
+  display: none;
+}
+
+label[for="open"] {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  font-size: 25px;
+  text-align: center;
+  line-height: 30px;
+  background-color: #2b2b2b;
+  color: whitesmoke;
+  margin: 5px;
+}
+
+#open:checked ~ div.menu {
+  top: 0;
+}
+
+label[for="close"] {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  top: 0;
+  right: 0;
+  background-color: crimson;
+  text-align: center;
+  line-height: 40px;
+  font-size: 30px;
+  color: whitesmoke;
+  cursor: pointer;
+}
+
+#close:checked ~ div.menu {
+  top: -100%;
+}
+
+div.header {
+  display: block;
+}
+
+div.header > div > h3 {
+  margin: 15px auto;
+  display: flex;
+  justify-content: center;
+  font-size: 15px;
+  font-family: apple;
+  color: #2b2b2b;
+}
+
+div.progres {
+  width: 100%;
+  height: calc(100vh - 40px);
+  background-image: url(../../../images/hero_iphone14pro_spring__9xo85pm6sbmm_large.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  margin-bottom: 10px;
+}
+div.progres-2 {
+  width: 100%;
+  height: calc(100vh - 40px);
+  background-image: url(../../../images/hero_iphone14_yellow__eun20sn4imi6_large.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  margin-bottom: 10px;
+}
+div.progres-3 {
+  width: 100%;
+  height: calc(100vh - 40px);
+  background-image: url(../../../images/hero_apple_watch_series_8_spring__b1y8wb7xjc9y_large.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  margin-bottom: 10px;
+}
+
+div.progres > div.slogan {
+  width: 400px;
+  padding: 30px;
+}
+
+div.progres > div.slogan > h3 {
+  font-size: 45px;
+  text-align: center;
+  font-family: apple;
+  color: whitesmoke;
+}
+div.progres > div.slogan > h4 {
+  font-size: 25px;
+  text-align: center;
+  font-family: apple;
+  color: whitesmoke;
+}
+div.progres-2 > div.slogan-2 {
+  padding-top: 70px;
+}
+
+div.progres-2 > div.slogan-2 > h3 {
+  font-size: 45px;
+  text-align: center;
+  font-family: apple;
+  color: #2b2b2b;
+}
+div.progres-2 > div.slogan-2 > h4 {
+  font-size: 25px;
+  text-align: center;
+  font-family: apple;
+  color: #2b2b2b;
+}
+div.progres-3 > div.slogan-3 {
+  padding-top: 70px;
+}
+
+div.progres-3 > div.slogan-3 > h3 {
+  font-size: 45px;
+  text-align: center;
+  font-family: apple;
+  color: whitesmoke;
+}
+
+div.content {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  flex-flow: row wrap;
+  padding-bottom: 12px;
+}
+
+div.content > div.left {
+  width: 49%;
+  height: 75vh;
+  background-image: url(../../../images/content/iphone_tradein_promo__d5au3rkw5kuq_large.jpg);
+  background-position: center center;
+  background-size: cover;
+}
+div.content > div.right {
+  width: 49%;
+  height: 75vh;
+  background-image: url(../../../images/content/privacy__fzwalkil8paq_large.jpg);
+  background-position: center center;
+  background-size: cover;
+}
+
+div.content-2 {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  flex-flow: row wrap;
+  padding-bottom: 12px;
+}
+
+div.content-2 > div.left {
+  width: 49%;
+  height: 75vh;
+  background-image: url(../../../images/content/promo_ipadpro__ch217v9v7no2_large.jpg);
+  background-position: center center;
+  background-size: cover;
+}
+div.content-2 > div.right {
+  width: 49%;
+  height: 75vh;
+  background-image: url(../../../images/content/promo_pride23__cnpic94fthle_large.jpg);
+  background-position: center center;
+  background-size: cover;
+}
+div.content-3 {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  flex-flow: row wrap;
+  padding-bottom: 12px;
+}
+
+div.content-3 > div.left {
+  width: 49%;
+  height: 75vh;
+  background-image: url(../../../images/content/tile__cauwwcyyn9hy_large.jpg);
+  background-position: center center;
+  background-size: cover;
+}
+div.content-3 > div.right {
+  width: 49%;
+  height: 75vh;
+  background-image: url(../../../images/content/promo_wwdc23_swift__b3fev54l3bci_large.jpg);
+  background-position: center center;
+  background-size: cover;
+}
+
+div.content > div.left > h3 {
+  font-size: 45px;
+  text-align: center;
+  font-family: apple;
+  color: #2b2b2b;
+  padding-top: 50px;
+}
+div.content > div.left > h4 {
+  font-size: 20px;
+  text-align: center;
+  font-family: apple;
+  color: #2b2b2b;
+}
+
+div.content > div.right > h3 {
+  font-size: 40px;
+  text-align: center;
+  font-family: apple;
+  color: white;
+  padding-top: 50px;
+}
+div.content > div.right > h4 {
+  font-size: 40px;
+  text-align: center;
+  font-family: apple;
+  color: white;
+  padding-bottom: 5px;
+}
+div.content > div.right > h5 {
+  font-size: 20px;
+  text-align: center;
+  font-family: apple;
+  color: white;
+}
+
+div.content-2 > div.left > h3 {
+  font-size: 45px;
+  text-align: center;
+  font-family: apple;
+  color: white;
+  padding-top: 50px;
+}
+div.content-2 > div.left > h4 {
+  font-size: 20px;
+  text-align: center;
+  font-family: apple;
+  color: white;
+}
+
+div.content-2 > div.right > h3 {
+  font-size: 40px;
+  text-align: center;
+  font-family: apple;
+  color: #2b2b2b;
+  padding-top: 50px;
+}
+div.content-2 > div.right > h4 {
+  font-size: 40px;
+  text-align: center;
+  font-family: apple;
+  color: #2b2b2b;
+  padding-bottom: 5px;
+}
+
+div.content-3 > div.left > h3 {
+  font-size: 40px;
+  text-align: center;
+  font-family: apple;
+  color: #2b2b2b;
+  padding-top: 50px;
+}
+div.content-3 > div.left > h4 {
+  font-size: 20px;
+  text-align: center;
+  font-family: apple;
+  color: #2b2b2b;
+  padding-bottom: 5px;
+}
+
+div.content-3 > div.right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+}
+
+div.content-3 > div.right > h3 {
+  font-size: 40px;
+  text-align: center;
+  font-family: apple;
+  color: white;
+  padding-top: 50px;
+  justify-content: center;
+  align-items: flex-end;
+  padding-top: 300px;
+}
+
+div.menu > nav > ul > li:hover > div.submenu > div.child > div.parent {
+  display: block;
+  width: 100%;
+  height: 380px;
+  transition: 400ms;
+}
+div.menu
+  > nav
+  > ul
+  > li:hover
+  > div.submenu
+  > div.child
+  > div.parent
+  > div.open {
+  display: none;
+  width: 20%;
+  display: inline-block;
+  margin-left: 100px;
+}
+
+div.menu
+  > nav
+  > ul
+  > li:hover
+  > div.submenu
+  > div.child
+  > div.parent
+  > div.open
+  > ul {
+  display: none;
+  width: inherit;
+  height: inherit;
+  list-style: none;
+  transition: 300ms;
+}
+
+div.menu
+  > nav
+  > ul
+  > li:hover
+  > div.submenu
+  > div.child
+  > div.parent
+  > div.open
+  > ul
+  > li {
+  display: none;
+  width: auto;
+  height: inherit;
+  text-align: right;
+}
+
+div.menu
+  > nav
+  > ul
+  > li:hover
+  > div.submenu
+  > div.child
+  > div.parent
+  > div.open
+  > ul
+  > li
+  > a {
+  display: none;
+}
+
+div.menu > nav > ul > li > div.submenu > div.child > div.parent {
+  width: 100%;
+  height: 0;
+}
+
+div.menu
+  > nav
+  > ul
+  > li
+  > div.submenu
+  > div.child
+  > div.parent
+  > div.open
+  > ul
+  > li {
+  display: none;
+}
+
+div.menu
+  > nav
+  > ul
+  > li
+  > div.submenu
+  > div.child
+  > div.parent
+  > div.open
+  > ul
+  > li
+  > a {
+  display: none;
+}
+
+div.menu > nav > ul > li:hover > div.submenu > div.child {
+  height: 0;
+}
+
+div.menu > nav > ul > li:hover > div.submenu > div.child > div.parent {
+  display: none;
+}
+div.menu
+  > nav
+  > ul
+  > li:hover
+  > div.submenu
+  > div.child
+  > div.parent
+  > div.open {
+  display: none;
+}
+
+div.menu
+  > nav
+  > ul
+  > li:hover
+  > div.submenu
+  > div.child
+  > div.parent
+  > div.open
+  > ul {
+  display: none;
+}
+
+div.menu
+  > nav
+  > ul
+  > li:hover
+  > div.submenu
+  > div.child
+  > div.parent
+  > div.open
+  > ul
+  > li {
+  display: none;
+}
+
+div.menu
+  > nav
+  > ul
+  > li:hover
+  > div.submenu
+  > div.child
+  > div.parent
+  > div.open
+  > ul
+  > li
+  > a {
+  display: none;
+}
+
+div.parent {
+  display: none;
+}
+
+div.open {
+  display: none;
+}
